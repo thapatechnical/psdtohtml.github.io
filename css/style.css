@@ -810,6 +810,12 @@ footer p{
 
 @media (max-width: 760px){
    
+    .header_img  figure{
+        text-align: center;
+    }
+    .header_img .img-fluid{
+        max-width: 75%;
+    }
 
     .about_sec{
         margin-top: 100px;
