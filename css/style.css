@@ -13,7 +13,6 @@
     box-shadow: 0 2px 9px 0px grey;
 }
 
-
 .navbar_inner{
   background:  #5f9ea0;
 }
@@ -150,7 +149,7 @@ font-size: 26px;
 color: #8c8c8c;
 font-family: "Lato";
 font-weight: 300;
-margin-top: 100px;
+margin-top: 50px;
 }
 
 .header_text2{
@@ -158,7 +157,7 @@ font-size: 26px;
 color: #2d3436;
 font-family: "Lato";
 font-weight: 400;
-margin-bottom: 30px;
+margin-bottom: 60px;
 }
 
 .span_header_text{
@@ -168,7 +167,7 @@ margin-bottom: 30px;
 .hire_me{
 width: 160px;
 height: 40px;
-background-color: #ff7230!important;
+background-color: #ff7230;
 font-size: 20px;
 color: #ffffff;
 font-family: "Lato";
@@ -176,6 +175,7 @@ font-weight: 300;
 text-transform: capitalize;
 outline: none;
 border: none;
+transition: all 0.2s linear;
 }
 
 
@@ -191,7 +191,21 @@ color: #ff7230;
 font-family: "Lato";
 font-weight: 300;
 text-transform: capitalize;
+transition: all 0.2s linear;
 }
+
+.hire_me:hover{
+background-color: #fff;
+border: 1px solid #ff7230;
+color: #ff7230;
+}
+
+.about_me:hover{
+background-color: #ff7230!important;
+color: #ffffff;
+border: none;
+}
+
 
 
 .header_mail p{
@@ -275,35 +289,6 @@ margin-bottom: 25px;
  font-weight: 300;
 }
 
-@media (max-width: 760px){
-   
-    .about_sec{
-        margin-top: 100px;
-        height: 900px!important;
-        padding: 10px 0 5px 0;
-    }
-
-    .main_title h1{
-        font-size: 60px;
-    }
-
-    .main_title h1:before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        border-radius: 47px;
-        background-color: #ffeee6;
-        z-index: -1;
-        text-align: center;
-        left: 0%;
-    }
-
-.main_div_style figure .img-fluid {
-    margin-bottom: 30px;
-}
-
-}
 
 /*/////////// expertise section start ////////////////*/
 
@@ -388,177 +373,9 @@ left: 20%;
 }
 
 
-@media (max-width: 760px){
-
-    .expert_sec {
-        width: 100%;
-        height: 130vh!important;
-    }
-   
-    .expert_sec .main_title h1:before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        border-radius: 47px;
-        background-color: #ffeee6;
-        z-index: -1;
-        text-align: center;
-        left: 12%;
-        top: -5%;
-    }
 
 
-    .main_title p{
-        font-size: 24px!important;
-        color: #000000;
-        font-family: "Lato";
-        font-weight: 300;
-        text-align: center!important;
-        margin-bottom: 75px;
-        margin-top: 20px;
-    }
-
-    .main_div_style figure .img-fluid {
-        max-width: 100%!important;
-        height: auto;
-        margin-top: 20px;
-    }
-}
-
-
-/*<!-- //////////////////////// our services  //////////////// -->*/
-
-/*.ourservices{
-    width: 100%;
-    height: 90vh;
-    margin: 50px 0;
-}
-
-
-.ourservices .main_title h1:before{
-content: '';
-position: absolute;
-width: 94px;
-height: 94px;
-border-radius: 47px;
-background-color: #ffeee6;
-z-index: -1;
-text-align: center;
-left: 24%;
-}
-
-.main_title p{
-font-size: 26px;
-color: #000000;
-font-family: "Lato";
-font-weight: 300;
-text-align: center;
-}
-
-.services_div{
-    background:  #F8F8F8;
-    padding: 20px 10px 60px 10px;
-    box-shadow: 0 0 4px grey;
-    margin-top: 50px;
-    transition: 0.2s linear;
-}
-
-.services_div:hover{
-    padding: 20px 10px 70px 10px;
-    box-shadow: 0 0 4px 2px grey;
-    margin-top: 50px;
-    background: #fff;
-    transform: scale(1.03);
-}
-
-.services_div h1{
-    text-align: center;
-    font-size: 52px;
-    color: #ff7230;
-    position: relative;
-    width: 70px;
-    height: 70px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #ffeee6;
-}
-
-.services_div:hover h1{
-    width: 70px;
-    height: 70px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid #ff7230;
-}
-
-.services_div:hover li{
-    padding-left: 5px;
-}
-
-
-.services_div:hover .service_list_icon{
-    margin-right: 5px;
-}
-
-.heart_at_bottom:after{
-content: '\2665';
-position: absolute;
-width: 60px;
-height: 60px;
-border-radius: 50%;
-font-size: 6rem;
-color: #ffeee6;
-z-index: -1;
-text-align: center;
-left: 0;
-bottom: 45px;
-}
-
-.services_div li{
-    list-style: none;
-    font-size: 23px;
-    color: #000000;
-    font-family: "Lato";
-    font-weight: 300;
-    text-transform: capitalize;
-    padding-left: 5px;
-}
-
-.services_div li:first-child{
-    padding-top: 20px;
-}
-
-.services_div .service_list_icon{
-    width: 14px;
-    height: 14px;
-    margin-right: 5px;
-}
-
-
-@media (max-width: 760px){
-
-    .ourservices {
-        width: 100%;
-        height: 185vh!important;
-        margin: 50px 0;
-    }
-
-    .ourservices .main_title h1:before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        border-radius: 47px;
-        background-color: #ffeee6;
-        z-index: -1;
-        text-align: center;
-        left: -3%;
-    }
-}
-*/
-
+/*//////////////////////////// our services ///////////////////*/
 
 .ourservices{
     width: 100%;
@@ -640,22 +457,6 @@ text-align: center;
     padding-bottom: 0px!important;
  }
 
-/*
-.heart_at_bottom:after{
-    content: '\2665';
-    position: absolute;
-    width: 60px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 6rem;
-    color: #ffeee6;
-    z-index: -1;
-    text-align: center;
-    left: 0;
-    bottom: 40px;
-}
-*/
-
 .services_div li{
     list-style: none;
     font-size: 23px;
@@ -677,26 +478,6 @@ text-align: center;
 }
 
 
-@media (max-width: 760px){
-
-    .ourservices {
-        width: 100%;
-        height: 185vh!important;
-        margin: 50px 0;
-    }
-
-    .ourservices .main_title h1:before {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        border-radius: 47px;
-        background-color: #ffeee6;
-        z-index: -1;
-        text-align: center;
-        left: -3%;
-    }
-}
 
 
 /*///////////////////// hire me section /////////////////*/
@@ -704,7 +485,7 @@ text-align: center;
 .hireme_section{
     width: 100%;
     height: auto;
-    padding: 60px 0;
+    padding: 45px 0;
     margin:50px 0;
     text-align: center;
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/hire.jpg');
@@ -713,7 +494,7 @@ text-align: center;
 }
 
 .hireme_section h2{
-   font-size: 42px;
+   font-size: 40px;
 color: #ff7230;
 font-family: "Lato";
 font-weight: 400;
@@ -721,18 +502,18 @@ font-weight: 400;
 
 .hireme_section p{
     color: white;
-   font-size: 42px;
+   font-size: 36px;
 color: #ffffff;
 font-family: "Lato";
 font-weight: 300;
 }
 
 .hireme_section h3{
-font-size: 33px;
+font-size: 30px;
 color: #ffffff;
 font-family: "Lato";
 font-weight: 300;
-margin-top: -30px;
+margin-top: -20px;
 padding-bottom: 30px;
 }
 
@@ -779,29 +560,6 @@ left: 26%;
     top: -77px;
 }
 
-@media(max-width: 760px){
-    .contactme_sec img {
-        width: 100%;
-        height: 450px;
-        padding-bottom: 40px;
-        position: absolute;
-        top: -77px;
-        display: none;
-    }
-
-    .contactme_sec .main_title h1:before{
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        border-radius: 47px;
-        background-color: #ffeee6;
-        z-index: -1;
-        text-align: center;
-        left: 0%;
-    }
-
-}
 
 /*/////////////// Contact botttom shares //////////*/
 
@@ -855,6 +613,25 @@ left: 26%;
     color: #3b5998;
 }
 
+.socialsites_links .fa-instagram:hover{
+    color: #e4405f;
+}
+
+
+.socialsites_links .fa-dribbble:hover{
+    color: #ea4c89;
+}
+
+
+.socialsites_links .fa-pinterest:hover{
+    color: #bd081c;
+}
+
+.socialsites_links .fa-behance:hover{
+    color: #131418;
+}
+
+
 @media(max-width: 760px){
     .socialsites_links{
         margin-bottom: 20px;
@@ -876,14 +653,32 @@ footer p{
 
 /*////////////// Responsive Media for Ipad ////////*/
 
-@media(max-width: 980px){
 
-    .main_header_sec{
-        margin: 40px auto;
+@media(max-width: 1220px){
+    
+    .about_sec{
+        height: 550px;
     }
 
+    .expert_sec{
+        margin-top: 50px;
+        height: 650px;
+    }
+
+    .ourservices{
+        height: 650px;
+        margin-top: 50px;
+    }
+
+    .contactme_sec{
+        height: 600px;
+    }
+}
+
+@media(max-width: 1024px){
+    
     .about_sec{
-        height: 500px;
+        height: 550px;
     }
 
     .expert_sec{
@@ -891,11 +686,103 @@ footer p{
     }
 
     .ourservices{
-        height: 650px;
+        height: 700px;
+        margin-top: 50px;
     }
 
     .contactme_sec{
         height: 600px;
+    }
+}
+
+@media (max-width: 980px) {
+
+    .navbar-nav  li a:hover:before{
+    width: 0%;
+    }
+
+    .navbar-nav li a:hover{
+        border-bottom: 2px solid #ff7230;
+        color: #ff7230;
+    }
+
+    .main_header_sec{
+        margin: 40px auto;
+    }
+
+    .header_text{
+        margin-top: 10px;
+    }
+
+    .about_sec{
+        height: 500px;
+    }
+
+    .about_sec .main_title h1:before {
+        content: '';
+        position: absolute;
+        width: 94px;
+        height: 94px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: 16%;
+    }
+
+
+    .expert_sec{
+        height: 600px;
+    }
+
+    .expert_sec .main_title p{
+        padding-bottom: 50px;
+    }
+
+    .expert_sec .main_title h1:before {
+        content: '';
+        position: absolute;
+        width: 94px;
+        height: 94px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: 10%;
+    }
+
+
+    .ourservices{
+        height: 650px;
+        margin-top: 60px;
+    }
+
+    .ourservices .main_title h1:before {
+        content: '';
+        position: absolute;
+        width: 94px;
+        height: 94px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: 10%;
+    }
+
+    .contactme_sec{
+        height: 600px;
+    }
+
+    .contactme_sec .main_title h1:before {
+        content: '';
+        position: absolute;
+        width: 94px;
+        height: 94px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: 16%;
     }
 
     .contactme_sec .offset-1{
@@ -916,3 +803,232 @@ footer p{
 
 
 }
+
+
+/*///////////////////////////////////*/
+
+
+@media (max-width: 760px){
+   
+
+    .about_sec{
+        margin-top: 100px;
+        height: 900px;
+        padding: 10px 0 5px 0;
+    }
+
+    .main_title h1{
+        font-size: 60px;
+    }
+
+    .main_title h1:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: 0%;
+    }
+
+.main_div_style figure .img-fluid {
+    margin-bottom: 30px;
+}
+
+
+
+
+    .expert_sec {
+        width: 100%;
+        height: 130vh;
+    }
+   
+    .expert_sec .main_title h1:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: 12%;
+        top: -5%;
+    }
+
+
+    .main_title p{
+        font-size: 24px!important;
+        color: #000000;
+        font-family: "Lato";
+        font-weight: 300;
+        text-align: center!important;
+        margin-bottom: 75px;
+        margin-top: 20px;
+    }
+
+    .main_div_style figure .img-fluid {
+        max-width: 100%!important;
+        height: auto;
+        margin-top: 20px;
+    }
+
+
+    .contactme_sec img {
+        width: 100%;
+        height: 450px;
+        padding-bottom: 40px;
+        position: absolute;
+        top: -77px;
+        display: none;
+    }
+
+    .contactme_sec .main_title h1:before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: 0%;
+    }
+
+
+    .ourservices {
+        width: 100%;
+        height: 165vh;
+        margin: 50px 0;
+    }
+
+    .ourservices .main_title h1:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 47px;
+        background-color: #ffeee6;
+        z-index: -1;
+        text-align: center;
+        left: -3%;
+    }
+
+
+}
+
+
+/*///////////////////////////////////*/
+
+@media(max-width: 480px){
+
+.about_sec {
+    height: 820px;
+}
+
+
+.about_sec .main_title h1:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 47px;
+    background-color: #ffeee6;
+    z-index: -1;
+    text-align: center;
+    left: 0%;
+}
+
+.expert_sec{
+    height: 1050px;
+}
+
+.expert_sec .main_title h1:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 47px;
+    background-color: #ffeee6;
+    z-index: -1;
+    text-align: center;
+    left: 15%;
+    top: -10px;
+}
+
+.ourservices {
+    height: 1400px;
+}
+
+.ourservices  .main_title h1:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 47px;
+    background-color: #ffeee6;
+    z-index: -1;
+    text-align: center;
+    left: 0%;
+    top: -5px;
+}
+
+.ourservices .main_title p{
+    margin-bottom: 20px;
+}
+
+}
+
+
+@media(max-width: 320px){
+
+.about_sec {
+    height: 820px;
+}
+
+.about_sec .main_title h1:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 47px;
+    background-color: #ffeee6;
+    z-index: -1;
+    text-align: center;
+    left: 0%;
+}
+
+.expert_sec{
+    height: 1050px;
+}
+
+.ourservices {
+    height: 1600px;
+}
+
+.ourservices  .main_title h1:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 47px;
+    background-color: #ffeee6;
+    z-index: -1;
+    text-align: center;
+    left: 22%;
+    top: -5px;
+}
+
+.ourservices .main_title p{
+    margin-bottom: 20px;
+}
+
+  .contactme_sec{
+        height: 700px;
+    }
+
+
+}
+
